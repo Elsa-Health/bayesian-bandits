@@ -1,3 +1,4 @@
+import bernoulli from './distributions/bernoulli';
 // Generate random umber from a Beta Distribution http://en.wikipedia.org/wiki/Beta_distribution
 // Adapted from https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter6_Priorities/d3bandits.js
 export function randomBeta(alpha: number, beta: number): number {
@@ -56,3 +57,5 @@ export function chooseArm(arms: Arm[]): number {
     .map(arm => sampleArm(arm))
     .reduce((iMax, x, i, arr) => (x > arr[iMax] ? i : iMax), 0);
 }
+
+export { bernoulli };
