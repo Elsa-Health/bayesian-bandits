@@ -48,7 +48,7 @@ const armIndex = chooseArm(banditState.arms);
 const armReward = 1;
 
 // Number of total attemts that resulted in the above reward
-const armReward = 1;
+const attempts = 1;
 
 const updatedBanditArms = rewardArm(
   candies.arms,
@@ -58,7 +58,8 @@ const updatedBanditArms = rewardArm(
 );
 
 // Store the updated Bandit Arms in state ready for reuse later on.
-storeSomethingMethod(updatedBandits);
+// storeSomethingMethod(updatedBanditArms);
+console.log(updatedBanditArms);
 ```
 
 ### License
